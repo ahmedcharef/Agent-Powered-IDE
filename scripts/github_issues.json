@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Backend: Setup project dependencies (Prisma, tRPC, NextAuth, Vitest)",
+    "body": "## Description\nInstall and configure all required backend dependencies.\n\n## Acceptance Criteria\n- [ ] Install Prisma and @prisma/client\n- [ ] Install tRPC packages\n- [ ] Install NextAuth v5\n- [ ] Install Vitest\n- [ ] Install Zod, bcryptjs\n\n## Related\nSPEC.md Section 6.1\n\n**Task ID:** TASK-BE-001",
+    "labels": ["task", "backend", "priority:critical", "mvp", "setup"]
+  },
+  {
+    "title": "Backend: Configure Supabase PostgreSQL connection",
+    "body": "## Description\nSetup Supabase project and configure PostgreSQL database connection.\n\n## Acceptance Criteria\n- [ ] Create Supabase project\n- [ ] Get database connection string\n- [ ] Add DATABASE_URL to .env\n- [ ] Test connection\n\n## Related\nSPEC.md Section 6.2\n\n**Task ID:** TASK-BE-002",
+    "labels": ["task", "backend", "priority:critical", "mvp", "setup"]
+  },
+  {
+    "title": "Backend: Initialize Prisma schema with all models",
+    "body": "## Description\nCreate complete Prisma schema with User, Product, Cart, Order models.\n\n## Acceptance Criteria\n- [ ] Define User model with Role enum\n- [ ] Define NextAuth models (Account, Session, VerificationToken)\n- [ ] Define Product model\n- [ ] Define CartItem model\n- [ ] Define Order and OrderItem models\n- [ ] Add proper relations and indexes\n\n## Related\nSPEC.md Section 3.2\n\n**Task ID:** TASK-BE-003",
+    "labels": ["task", "backend", "priority:critical", "mvp", "database"]
+  },
+  {
+    "title": "Backend: Create initial database migration",
+    "body": "## Description\nGenerate and run initial Prisma migration.\n\n## Acceptance Criteria\n- [ ] Run prisma migrate dev\n- [ ] Verify all tables created\n- [ ] Generate Prisma Client\n- [ ] Test database queries\n\n## Related\nSPEC.md Section 3.2\n\n**Task ID:** TASK-BE-004",
+    "labels": ["task", "backend", "priority:critical", "mvp", "database"]
+  },
+  {
+    "title": "Backend: Setup NextAuth configuration with credentials provider",
+    "body": "## Description\nConfigure NextAuth v5 with email/password authentication.\n\n## Acceptance Criteria\n- [ ] Create auth.ts config file\n- [ ] Setup credentials provider\n- [ ] Configure Prisma adapter\n- [ ] Add session strategy (JWT)\n- [ ] Setup callbacks for role\n\n## Related\nSPEC.md Section 2.1, REQ-AUTH-003\n\n**Task ID:** TASK-BE-005",
+    "labels": ["task", "backend", "priority:high", "mvp", "auth"]
+  }
+]
