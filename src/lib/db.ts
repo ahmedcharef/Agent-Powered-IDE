@@ -6,7 +6,6 @@ import { env } from './env';
  * This prevents multiple instances in development due to hot reloading
  */
 declare global {
-  // eslint-disable-next-line no-var
   var prisma: PrismaClient | undefined;
 }
 
@@ -20,7 +19,6 @@ declare global {
  */
 const createPrismaClient = () => {
   const isDevelopment = env.NODE_ENV === 'development';
-  const isProduction = env.NODE_ENV === 'production';
 
   return new PrismaClient({
     log: isDevelopment
