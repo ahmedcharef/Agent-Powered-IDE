@@ -12,3 +12,9 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+// Placeholder model for Prisma Client generation
+// This will be replaced with full schema in TASK-BE-003
+model _Placeholder {
+  id Int @id @default(autoincrement())
+}
